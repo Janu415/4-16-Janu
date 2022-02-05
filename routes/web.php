@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,7 +33,7 @@ Route::get('/about', function () {
         "title" => "About",
         "nama" => "Janu Girindra Aji",
         "email" => "Janugirindraa@gmail.com",
-        "gambar" => "hjp.jpg"
+        "gambar" => "xxx.jpeg"
     ]);
 });
 
@@ -42,3 +43,4 @@ Route::get('/galeri', function () {
     ]);
 });
 
+Route::resource('/contacts', ContactController::class);
